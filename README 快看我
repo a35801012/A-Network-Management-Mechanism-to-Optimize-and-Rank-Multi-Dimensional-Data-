@@ -1,0 +1,60 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install gcc
+sudo apt install g++
+sudo apt install libpcap-dev
+sudo apt install libmaxminddb-dev
+sudo apt install libcjson-dev
+sudo apt install libjson-c-dev
+sudo apt install libjansson-dev
+
+
+###--------------------CityHash--------------------###
+
+sudo apt update
+sudo apt install build-essential autoconf automake libtool
+wget https://github.com/google/cityhash/archive/refs/heads/master.zip
+unzip master.zip
+cd cityhash-master
+./configure
+make
+sudo make install
+
+###--------------------libmicrohttpd--------------------###
+sudo apt install libmicrohttpd-dev
+
+
+
+###--------------------更動GeoLite2的檔案位置--------------------###
+＠更動GeoLite2的檔案位置
+const char *dbPath = "/home/topn/桌面/topN/GeoLite2-City_20240402/GeoLite2-City.mmdb";
+const char *dbPath = "（更動的位置）";
+
+＠更動網路介面卡名稱
+char dev[] = "enp5s0"; 
+char dev[] = "（使用的介面卡名稱）"; 
+
+
+
+###--------------------React.js--------------------###
+sudo apt install nodejs
+sudo apt install npm
+node -v
+npm -v
+
+
+
+-------------------------------------
+
+如果只要單純在terminal上運行topN 
+執行"sudo ./Hashfmtop"
+關於系統功能, 可以查看"handleUserCommands"函式。
+
+-------------------------------------
+
+如果要啟用前端版本
+開啟兩個終端機
+一個在當前環境下執行"sudo ./httpfmtop"或"sudo ./newhttpfmtop"
+另一個cd到"my-app"後, 再執行"npm start"。
+
+

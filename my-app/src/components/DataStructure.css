@@ -1,0 +1,125 @@
+.network-row, .time-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.query-params {
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-label {
+  flex: 1;
+  min-width: 200px; /* Adjust as needed */
+  padding: 5px;
+}
+
+.flow-group {
+  flex: 1;
+  min-width: 150px; /* Adjust as needed */
+  padding: 5px;
+}
+
+input[type="text"] {
+  width: 100%; /* Ensure input fields take up full width of the container */
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #ccc;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px; /* Adjust button size to be consistent */
+  font-size: 16px;
+}
+
+.flow-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.results p {
+  margin: 20px 0;
+}
+
+.results-scroll {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80%; /* Increased height */
+  border-radius: 8px;
+  overflow-y: auto; /* Ensure content is scrollable if exceeds height */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.data-points {
+  margin-top: 10px;
+}
+
+.data-points-scroll {
+  max-height: 400px; /* Increased height */
+  overflow-y: auto;
+}
+
+.data-point {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+}
+

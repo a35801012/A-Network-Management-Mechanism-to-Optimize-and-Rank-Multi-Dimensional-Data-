@@ -1,0 +1,147 @@
+//Alerts.css
+
+.alerts-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.top-panel {
+  display: flex;
+  width: %;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.network-info .input-group {
+  align-items: center; /* Vertically align label and input */
+  margin-bottom: 10px;
+}
+
+.network-info label {
+  width: 30%; /* Adjust label width */
+  min-width: 100px; /* Ensure labels don't become too small */
+  margin-right: 10px; /* Space between label and input */
+}
+
+.network-info input[type="text"] {
+  flex: 1; /* Allow input to fill the remaining space */
+  padding: 8px; /* Adequate padding for visibility */
+  font-size: 16px; /* Increase font size if needed */
+  min-width: 160px; /* Minimum width to handle longer text */
+}
+
+.center-panel {
+  display: flex;
+  justify-content: center; /* Center the panel horizontally */
+  align-items: center; /* Center the panel vertically */
+  gap: 20px; /* Space between the thresholds form and the refresh interval */
+  width: 100%; /* Make sure it takes the full width */
+}
+
+.thresholds-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thresholds-form form label,
+.refresh-interval label {
+  font-size: 1.2em;
+}
+
+.thresholds-form form select {
+  display: flex;
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px 0;
+  width: 250px;
+  text-align: center;
+}
+
+.thresholds-form form input{
+  display: flex;
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px 0;
+  width: 250px;
+  text-align: center;
+}
+
+.refresh-interval input{
+  display: flex;
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px 0;
+  width: 250px;
+  text-align: center;
+}
+
+.thresholds-form form button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.log-table-area {
+  width: 95%;
+  max-height: 1100px; /* 您可以根據需要調整這個高度 */
+  background-color: #f4f4f4;
+  border-top: 0px solid #ccc;
+}
+
+.log-table-area table {
+  width: 90%;
+  border-collapse: collapse; /* 用于消除单元格之间的空隙 */
+}
+
+.log-table-area th, .log-table-area td {
+  border: 1px solid #ccc; /* 添加边框显示网格线 */
+  padding: 14px; /* 调整填充保持内容的可读性 */
+  text-align: left; /* 左对齐所有列 */
+  min-width: 120px; /* 设置最小宽度保持列宽固定 */
+}
+
+/* 特定列宽度调整 */
+.log-table-area th:nth-child(1), .log-table-area td:nth-child(1) { min-width: 160px; }
+.log-table-area th:nth-child(2), .log-table-area td:nth-child(2) { min-width: 200px; }
+.log-table-area th:nth-child(3), .log-table-area td:nth-child(3) { min-width: 300px; }
+.log-table-area th:nth-child(4), .log-table-area td:nth-child(4) { min-width: 400px; }
+.log-table-area th:nth-child(5), .log-table-area td:nth-child(5) { min-width: 150px; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Add this CSS for the floating alert window */
+.floating-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 0, 0, 0.8); /* Red background with some transparency */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.floating-alert.show {
+  opacity: 1;
+}
+
+
+

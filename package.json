@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "highcharts": "^11.4.1",
+    "highcharts-react-official": "^3.2.1",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-table": "^7.8.0",
+    "react-toastify": "^10.0.5",
+    "socket.io": "^4.7.5"
+  },
+  "name": "topn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

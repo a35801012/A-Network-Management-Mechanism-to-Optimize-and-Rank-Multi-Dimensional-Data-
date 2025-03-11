@@ -1,0 +1,158 @@
+/* Basic Reset */
+body, h1, h2, h3, p { margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; }
+/* Sidebar Styling */
+.sidebar {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  padding: 10px;
+}
+.sidebar img {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidebar img.active {
+  border: 2px solid #000; /* Example to highlight active icon */
+}
+
+.sidebar a {
+  display: block;
+  padding: 1px;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+/* Content Styling */
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.network-info {
+    /* Style the network information section */
+    margin-bottom: 20px; /* Space from the next section */
+}
+
+.network-info input,
+.network-info label {
+    display: block; /* Makes label take the full width */
+    margin: 5px 0; /* Spacing above and below the label */
+}
+
+.network-info input {
+    width: 10%; /* Full width of the container */
+    padding: 5px; /* Padding inside the input box */
+    margin-bottom: 10px; /* Space between the input fields */
+    border: 3px solid #ccc; /* Border color */
+    font-size: 1rem; /* Text size inside input box */
+}
+
+
+.time-range-container {
+  /* Styles to position and resize the start and end time inputs */
+  position: absolute; /* Position relative to the main content */
+  top: 80px; /* Align to the top of the chart, adjust as necessary */
+  right: 50px; /* Align to the right of the chart, adjust as necessary */
+  background-color: #fff; /* Background color to match the design */
+  border: 2px solid #ccc; /* Border to match the design */
+  padding: 4px; /* Padding to ensure content doesn't touch the edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+  z-index: 10; /* Ensure it sits above the chart */
+ /* Use flexbox to align items side by side */
+  gap: 8px; /* Add gap between the input fields */
+  flex-wrap: wrap; /* Allow items to wrap in the container */
+  flex-direction: column; /* 將方向設為縱向排列 */
+  align-items: flex-start; 
+}
+
+.time-range-container input[type="text"] {
+  flex: 1 1 auto; /* Allow input fields to grow and take available space */
+/* Minimum width of input fields, adjust as necessary */
+  padding: 8px; /* Padding inside the input fields */
+  font-size: 20px; /* Adjust font size to fit the new smaller area */
+  width: 300px; /* 調整至合適的寬度 */
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.time-range-container button {
+    margin-top: 4px; /* 與輸入框之間的距離 */
+    margin-left: 270px; /* 將按鈕推到右側 */
+    align-self: flex-end; /* 確保按鈕在行的末端 */
+    background-color: #4CAF50;
+}
+
+#totalTrafficSize {
+  /* Add your custom styles here */
+  position: absolute; /* or relative, depending on your layout */
+  bottom: 700px; /* Adjust as needed */
+  left: 750px; /* Adjust as needed */
+  z-index: 10;
+  background: yellow; /* Optional: Add a background color if it overlaps with the chart for readability */
+  padding: 2px; /* Optional: Add some padding around the text */
+  border: 2px solid #ccc; /* Optional: Add a border */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+.ranking-section {
+    position: absolute; /* or relative, depending on your layout */
+    bottom: 250px; /* Adjust as needed */
+    display: flex; /* Align the label, select, and input inline */
+    gap: 10px; /* Space between the controls */
+    z-index: 10;
+    margin-top: 10px; /* Space above the ranking section */
+    padding: 10px;
+    font-size: 1.2rem; /* Text size inside input box */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    border-radius: 50px; 
+    left: 350px;
+}
+
+.ranking-chart {
+  position: absolute;
+  right: 50px;
+  overflow-x: visible;
+  flex-grow: 1; /* For flex items */
+  width: 80%; /* Adjust this value as needed */
+  max-width: 1200px; /* Optionally set a max-width */
+}
+
+.chart-wrapper {
+  overflow-x: visible;
+  max-width: none;
+  flex: 1 1 auto; /* Allow input fields to grow and take available space */
+  min-width: 100px; /* Minimum width of input fields, adjust as necessary */
+  padding: 0px; /* Padding inside the input fields */
+  font-size: 1rem; /* Adjust font size to fit the new smaller area */
+}
